@@ -6,10 +6,6 @@
   "scripts": {
     "start": "node main.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/this-is-emma/node-page-clone.git"
-  },
   "author": "",
   "license": "ISC",
   "bugs": {
