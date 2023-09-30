@@ -1,30 +1,40 @@
-## ACS 2230 - NODE-REDDIT-CLONE Tutorial 
+# Simple Node App
 
-Based on instruction from this [repo](https://github.com/Tech-at-DU/Node-Reddit-Clone) 
+This is a boilerplate application designed to be used as a starting point for the tutorial.
 
-### Wireframe:
+## Getting Started
 
-0.0 - NodeJS REDDIT
- 
-1.0 - HOME
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-    1.1 - Header
-          1.1.1 - Logo
-          1.1.2 - Search bar
-          1.1.3 - Button: Download app
-          1.1.4 - Button: Log In
-          1.1.5 - Icon
+### Prerequisites
 
-    1.2 - left Navbar
-          1.2.1 - Icon group: Feed
-          1.2.2 - Icon group: Recent
-          1.2.3 - Icon group: Topic
-          1.2.4 - Text: Create an account to follow your favorite communities and start taking part in conversations.
-          1.2.5 - Button: Join Reddit
+What things you need to install and how to install them:
 
+* Node.js - JavaScript runtime environment
+* npm (comes with Node.js) - Node Package Manager
 
-    1.3 - Body
-          1.3.1 - Images Grid:
-          1.3.2 - Posts
-          1.4.2 - Button: Back to top
-```
+### Installing
+
+A step-by-step series of examples that tell you how to get a development environment running.
+
+Clone the repository to your local machine:
+
+`git clone https://github.com/yourusername/your-tutorial-boilerplate.git`
+
+Navigate to the project's directory:
+
+`cd your-tutorial-boilerplate`
+
+Install the project dependencies:
+
+`npm install`
+
+Running the App
+
+`npm start`
+
+OR
+
+`nodemon`
+
+The application should now be running at http://localhost:3000.

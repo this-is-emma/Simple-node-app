@@ -1,21 +1,21 @@
 {
-  "name": "reddit-clone",
+  "name": "page-clone",
   "version": "1.0.0",
   "description": "ACS2230 assignment",
-  "main": "reddit.js",
+  "main": "main.js",
   "scripts": {
-    "test": "mocha --exit"
+    "start": "node main.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/this-is-emma/node-reddit-clone.git"
+    "url": "git+https://github.com/this-is-emma/node-page-clone.git"
   },
-  "author": "Edith Sakatia <edith@email.com>",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/this-is-emma/node-reddit-clone/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/this-is-emma/node-reddit-clone#readme",
+  "homepage": "",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",

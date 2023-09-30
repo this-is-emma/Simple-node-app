@@ -17,7 +17,7 @@ module.exports = (app) => {
           });
     });
 
-    // Look up a specific post 
+    // Look up a specific post
     app.get('/post-show/:id', (req, res) => {
         const currentUser = req.user;
         Post.findById(req.params.id).populate('comments').lean()
@@ -36,7 +36,7 @@ module.exports = (app) => {
         post.upVotes = [];
         post.downVotes = [];
         post.voteScore = 0;
-  
+
         post
           .save()
           .then(() => User.findById(userId))
@@ -53,11 +53,11 @@ module.exports = (app) => {
         return res.send(401); // UNAUTHORIZED
       }
     });
-    
-    // View Subreddit
-    app.get('/n/:subreddit', (req, res) => {
+
+    // View Subpage
+    app.get('/n/:subpage', (req, res) => {
       const { user } = req;
-      Post.find({ subreddit: req.params.subreddit }).lean()
+      Post.find({ subpage: req.params.subpage }).lean()
       .then((posts) => res.render('posts-index', { posts, user }))
       .catch((err) => {
         console.log(err);
@@ -70,19 +70,19 @@ module.exports = (app) => {
         post.upVotes.push(req.user._id);
         post.voteScore += 1;
         post.save();
-    
+
         return res.status(200);
       }).catch(err => {
         console.log(err);
       })
     });
-    
+
     app.put('/posts/:id/vote-down', (req, res) => {
       Post.findById(req.params.id).then(post => {
         post.downVotes.push(req.user._id);
         post.voteScore -= 1;
         post.save();
-    
+
         return res.status(200);
       }).catch(err => {
         console.log(err);
